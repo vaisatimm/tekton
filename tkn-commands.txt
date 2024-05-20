@@ -1,0 +1,1 @@
+tkn task start hello-param-with-default --showlog --use-param-defaults
