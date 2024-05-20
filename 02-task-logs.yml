@@ -1,0 +1,50 @@
+⇣ tekton ⎈ [12:58:21]:root.vmi1537861:~/tekton# tkn task start script --showlog
+TaskRun started: script-run-h7dhw
+Waiting for logs to be available...
+[step-with-script] Installing necessary tooling
+[step-with-script] Updating Subscription Management repositories.
+[step-with-script] Unable to read consumer identity
+[step-with-script]
+[step-with-script] This system is not registered with an entitlement server. You can use subscription-manager to register.
+[step-with-script]
+[step-with-script] Red Hat Universal Base Image 8 (RPMs) - BaseOS  1.7 MB/s | 719 kB     00:00
+[step-with-script] Red Hat Universal Base Image 8 (RPMs) - AppStre 8.7 MB/s | 3.0 MB     00:00
+[step-with-script] Red Hat Universal Base Image 8 (RPMs) - CodeRea 470 kB/s | 103 kB     00:00
+[step-with-script] Dependencies resolved.
+[step-with-script] ================================================================================
+[step-with-script]  Package       Architecture Version               Repository               Size
+[step-with-script] ================================================================================
+[step-with-script] Installing:
+[step-with-script]  iputils       x86_64       20180629-11.el8       ubi-8-baseos-rpms       149 k
+[step-with-script]
+[step-with-script] Transaction Summary
+[step-with-script] ================================================================================
+[step-with-script] Install  1 Package
+[step-with-script]
+[step-with-script] Total download size: 149 k
+[step-with-script] Installed size: 324 k
+[step-with-script] Downloading Packages:
+[step-with-script] iputils-20180629-11.el8.x86_64.rpm               28 kB/s | 149 kB     00:05
+[step-with-script] --------------------------------------------------------------------------------
+[step-with-script] Total                                            28 kB/s | 149 kB     00:05
+[step-with-script] Running transaction check
+[step-with-script] Transaction check succeeded.
+[step-with-script] Running transaction test
+[step-with-script] Transaction test succeeded.
+[step-with-script] Running transaction
+[step-with-script]   Preparing        :                                                        1/1
+[step-with-script]   Installing       : iputils-20180629-11.el8.x86_64                         1/1
+[step-with-script]   Running scriptlet: iputils-20180629-11.el8.x86_64                         1/1
+[step-with-script]   Verifying        : iputils-20180629-11.el8.x86_64                         1/1
+[step-with-script] Installed products updated.
+[step-with-script]
+[step-with-script] Installed:
+[step-with-script]   iputils-20180629-11.el8.x86_64
+[step-with-script]
+[step-with-script] Complete!
+[step-with-script] PING redhat.com (52.200.142.250) 56(84) bytes of data.
+[step-with-script]
+[step-with-script] --- redhat.com ping statistics ---
+[step-with-script] 5 packets transmitted, 0 received, 100% packet loss, time 4076ms
+[step-with-script]
+[step-with-script] All done!

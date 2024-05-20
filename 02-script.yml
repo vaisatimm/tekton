@@ -7,7 +7,8 @@ spec:
   - name: step-with-script
     image: registry.access.redhat.com/ubi8/ubi
     script: | 
-      #!/usr/bin/env bash
+      #!/usr/bin/env bash 
+      #because bash could reside in another path
       echo "Installing necessary tooling"
       dnf install iputils -y
       ping redhat.com -c 5
