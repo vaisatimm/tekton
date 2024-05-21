@@ -9,7 +9,7 @@ spec:
     script: |
       cd ~
       echo "Getting ready to write to" $(pwd)
-      echo "Secret Message" > message.txt
+      echo "Secret Message" > /root/message.txt
   - name: read
     image: registry.access.redhat.com/ubi8/ubi-minimal
     command: 
