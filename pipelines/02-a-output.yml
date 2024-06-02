@@ -1,0 +1,19 @@
+⇣ tekton ⎈ [23:32:25]:root.vmi1537861:~/tekton/pipelines# tkn pipeline start hello-dice-roll --showlog
+PipelineRun started: hello-dice-roll-run-shqj4
+Waiting for logs to be available...
+[first : unnamed-0] Hello from first task
+
+[roll : greetings] Rolling 6-sided dice
+
+[roll : generate-random-number] /tekton/scripts/script-1-msfsq:3
+[roll : generate-random-number] let randomNumber = Math.floor(Math.random() * Math.floor(max)
+[roll : generate-random-number]                                                             ^
+[roll : generate-random-number]
+[roll : generate-random-number] SyntaxError: missing ) after argument list
+[roll : generate-random-number]     at wrapSafe (internal/modules/cjs/loader.js:1029:16)
+[roll : generate-random-number]     at Module._compile (internal/modules/cjs/loader.js:1078:27)
+[roll : generate-random-number]     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+[roll : generate-random-number]     at Module.load (internal/modules/cjs/loader.js:979:32)
+[roll : generate-random-number]     at Function.Module._load (internal/modules/cjs/loader.js:819:12)
+[roll : generate-random-number]     at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)
+[roll : generate-random-number]     at internal/main/run_main_module.js:17:47
