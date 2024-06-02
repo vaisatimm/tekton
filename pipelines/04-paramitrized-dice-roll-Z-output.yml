@@ -1,0 +1,28 @@
+⇣ tekton ⎈ [01:22:50]:root.vmi1537861:~/tekton/pipelines# tkn pipeline start parametrized-dice-roll --showlog
+PipelineRun started: parametrized-dice-roll-run-sbbsb
+Waiting for logs to be available...
+[first : unnamed-0] Hello from first task
+
+[roll : greetings] Rolling 6-sided dice
+
+[roll : generate-random-number] 3
+
+ (master)
+⇣ tekton ⎈ [01:23:17]:root.vmi1537861:~/tekton/pipelines# tkn pipeline start parametrized-dice-roll --showlog
+PipelineRun started: parametrized-dice-roll-run-l74c2
+Waiting for logs to be available...
+[first : unnamed-0] Hello from first task
+
+[roll : greetings] Rolling 6-sided dice
+
+[roll : generate-random-number] 4
+
+ (master)
+⇣ tekton ⎈ [01:24:36]:root.vmi1537861:~/tekton/pipelines# tkn pipeline start parametrized-dice-roll --showlog
+PipelineRun started: parametrized-dice-roll-run-plwp7
+Waiting for logs to be available...
+[first : unnamed-0] Hello from first task
+
+[roll : greetings] Rolling 6-sided dice
+
+[roll : generate-random-number] 2
