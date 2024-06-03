@@ -7,5 +7,16 @@ Waiting for logs to be available...
 [roll : greetings] Rolling 20-sided dice
 
 [roll : generate-random-number] 12
+--------------------------------------------------------------------------------------------------------------
 
+In order to use the default value for the parameter we need to add the "--use-param-defaults" flag.
+
+⇣ tekton ⎈ [16:30:54]:root.vmi1537861:~/tekton/pipelines# tkn pipeline start parametrized-dice-roll-with-params-in-pipe-and-task --showlog --use-param-defaults
+PipelineRun started: parametrized-dice-roll-with-params-in-pipe-and-task-run-dzcdv
+Waiting for logs to be available...
+[first : unnamed-0] Hello from first task
+
+[roll : greetings] Rolling 6-sided dice
+
+[roll : generate-random-number] 4
 
