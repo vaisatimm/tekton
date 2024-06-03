@@ -1,0 +1,25 @@
+#In this example we are going to study how to set a parameter inside the spec of out pipeline,
+#and how this parameter will be recalled by the parameter section of the specific task. 
+#After you start the pipeline, it will ask you for inserting manually a params that will be injected by the parameter of the pipeline,
+#whichi will put this value inside the second task parameter value.
+
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata: 
+  name: parametrized-dice-roll-with-params-in-pipe-and-task
+spec: 
+  params: 
+  - name: dice-sides
+    type: "string"
+    default: "6"
+    description: Number of sides on the dice
+  tasks: 
+  - name: first
+    taskRef: 
+      name: first-task
+  - name: roll
+    params:
+    - name: sides
+      value: $(params.dice-sides)
+    taskRef: 
+      name: die-roll-param

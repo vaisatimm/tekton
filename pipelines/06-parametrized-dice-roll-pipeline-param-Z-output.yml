@@ -1,0 +1,11 @@
+⇣ tekton ⎈ [16:27:30]:root.vmi1537861:~/tekton/pipelines# tkn pipeline start parametrized-dice-roll-with-params-in-pipe-and-task --showlog
+? Value for param `dice-sides` of type `string`? (Default is `6`) 20
+PipelineRun started: parametrized-dice-roll-with-params-in-pipe-and-task-run-gr8hb
+Waiting for logs to be available...
+[first : unnamed-0] Hello from first task
+
+[roll : greetings] Rolling 20-sided dice
+
+[roll : generate-random-number] 12
+
+
